@@ -18,10 +18,10 @@ spec:
       - image: tayo96/kubesecret
         name: tayo
 
-      env:
-       - name: MSG
-         valueFrom:
-           secretKeyRef:
-             name: mysecret
-             key: MSG 
+        env:
+        - name: MSG
+          valueFrom:
+            secretKeyRef:
+              name: mysecret
+              key: MSG 
     
